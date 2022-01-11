@@ -40,9 +40,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(errorHandler());
 
-app.get("/", (req, res) => {
-  res.send("Hello World!!!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello World!!!");
+// });
 
 server.listen(port, (err) => {
   if (err) throw logger.error("the server is not running !! " + PORT);
